@@ -1,7 +1,6 @@
 import 'dart:math';
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
-import 'package:flame/collisions.dart';
 import 'player.dart';
 import 'obstacle.dart';
 import 'reward.dart';
@@ -48,6 +47,7 @@ class MyGame extends FlameGame with HasCollisionDetection {
   }
 
   void reset() {
+    // ignore: invalid_use_of_internal_member
     children.clear();
     score = 0;
 
